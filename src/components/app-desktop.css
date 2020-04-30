@@ -1,0 +1,8 @@
+.desktop {
+    display: flex;
+    flex-direction: column;
+    flex: 2 0 auto;
+    height: 95vh;
+    background-repeat: var(--background-repeat-pref, repeat);
+    background-size: var(--background-size-pref, cover);
+}
