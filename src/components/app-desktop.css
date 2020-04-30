@@ -6,3 +6,9 @@
     background-repeat: var(--background-repeat-pref, repeat);
     background-size: var(--background-size-pref, cover);
 }
+
+.unsplash-notice {
+    position: absolute;
+    bottom: 5vh;
+    right: 10px;
+}

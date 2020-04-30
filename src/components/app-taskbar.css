@@ -5,8 +5,8 @@
     flex: 0 2 auto;
     height: 5vh;
     align-items: center;
-    background-color: var(--taskbar-background-pref, #4a4a4a3d);
-    color: var(--taskbar-foreground-pref, #f0ffff);
+    background-color: var(--taskbar-background-pref, rgba(74, 74, 74, 0.50));
+    color: var(--taskbar-foreground-pref, rgb(240, 255, 255));
     backdrop-filter: blur(12px);
 }
 

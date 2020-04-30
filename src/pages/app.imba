@@ -36,7 +36,8 @@ export tag App
 
 	def onclosestart
 		console.log 'closestart'
-		data.isStartOpen = false
+		if data.isStartOpen
+			data.isStartOpen = false
 
 	def onstartprogram program
 		console.log 'startprogram', program
@@ -45,5 +46,5 @@ export tag App
 		<self.desktoper css:background-image="url('{data.backgroundUrl}')">
 			if data.isStartOpen
 				<app-start programs=data.programs>
-			<app-desktop windows=data.windows icons=data.icons>
+			<app-desktop windows=data.windows icons=data.icons includeUnsplashNotice=data.includeUnsplashNotice>
 			<app-taskbar windows=data.windows programs=data.programs>

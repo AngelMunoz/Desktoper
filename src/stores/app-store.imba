@@ -6,6 +6,7 @@ export class AppStore
 	prop backgroundUrl
 	prop theme
 	prop isStartOpen
+	prop includeUnsplashNotice
 
 
 	def initialize
@@ -15,6 +16,7 @@ export class AppStore
 		@backgroundUrl = "https://source.unsplash.com/daily?ar=2:1"
 		@theme = 'dark'
 		@isStartOpen = false
+		@includeUnsplashNotice = @backgroundUrl.includes "unsplash"
 
 		self.initFromStorage
 	

@@ -1,9 +1,15 @@
 :root {
     --background-repeat-pref: repeat;
     --background-size-pref: cover;
-    --desktop-background-color: #4a4a4ada;
-    --taskbar-background-pref: #4a4a4a3d;
-    --taskbar-foreground-pref: #f0ffff;
+    --taskbar-transparency: 0.50;
+    --start-transparency: 0.50;
+    --base-color: rgb(223, 241, 241);
+    --start-foreground-color: rgb(223, 241, 241);
+    --desktop-background-color: rgb(74, 74, 74);
+    --desktop-foreground-color: rgb(223, 241, 241);
+    --taskbar-background-pref: rgba(74, 74, 74, var(--taskbar-transparency, 0.50));
+    --start-background-pref: rgba(74, 74, 74, var(--start-transparency, 0.50));
+    --taskbar-foreground-pref: rgb(240, 255, 255);
 }
 
 html, body {
@@ -14,5 +20,6 @@ html, body {
     flex-direction: column;
     align-content: stretch;
     justify-content: stretch;
-    background-color: var(--desktop-background-color, #4a4a4ada);
+    background-color: var(--desktop-background-color, rgb(74, 74, 74));
+    color: var(--base-color, white);
 }

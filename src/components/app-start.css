@@ -11,4 +11,5 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 4em;
     backdrop-filter: blur(12px);
+    background-color: var(--start-background-pref, rgba(74,74,74, 0.50));
 }
