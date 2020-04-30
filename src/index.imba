@@ -6,8 +6,3 @@ import { AppStore } from './stores/app-store'
 const appState = AppStore.new()
 
 Imba.mount <App[appState]>
-
-# ------------ WARNING: DO NOT TOUCH OR CHANGE!
-module:hot.dispose do
-	document:body:innerHTML = ''
-# ------------ NEEDED FOR PARCEL!
